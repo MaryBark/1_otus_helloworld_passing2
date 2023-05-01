@@ -1,0 +1,1 @@
+# 1_otus_helloworld_passing2
