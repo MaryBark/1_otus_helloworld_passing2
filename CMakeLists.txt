@@ -40,8 +40,8 @@ target_link_libraries(helloworld_cli PRIVATE
 target_link_libraries(test_version
     ${Boost_LIBRARIES}
     helloworld
-    gtest
-    gtest_main
+#    gtest
+#    gtest_main
 )
 
 #target_link_libraries(test_version gmock_main
@@ -49,12 +49,12 @@ target_link_libraries(test_version
 
 
 target_include_directories(
-helloworld PRIVATE
+test_for_gtest PRIVATE
     ${GTEST_INCLUDE_DIRS}
 )
 
 target_link_libraries(
- helloworld PRIVATE
+ test_for_gtest PRIVATE
     ${GTEST_BOTH_LIBRARIES}
 )
 
