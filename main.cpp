@@ -1,8 +1,7 @@
 #include "lib.h"
 
 #include <iostream>
-#include <gtest/gtest.h>
-#include "test_google.cpp"
+
 
 
 //int main (int, char **) {
@@ -13,9 +12,9 @@
 //}
 
 
-int main(int argc, char** argv) {
-    testing::InitGoogleTest(&argc, argv);
+int main() {
+   
     std::cout << "Version: " << version() << std::endl;
     std::cout << "Hello, world!" << std::endl;
-    return RUN_ALL_TESTS();
+    return 0;
 }
